@@ -17,7 +17,7 @@ class LaravelSpamassassinScoreServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-spamassassin-score')
             ->hasConfigFile();
-            //->hasViews()
+        //->hasViews()
             //->hasMigration('create_laravel_spamassassin_score_table')
             //->hasCommand(LaravelSpamassassinScoreCommand::class);
     }
