@@ -16,13 +16,6 @@ You can install the package via composer:
 composer require palpalani/laravel-spamassassin-score
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider" --tag="laravel-spamassassin-score-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 ```bash
 php artisan vendor:publish --provider="palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider" --tag="laravel-spamassassin-score-config"
