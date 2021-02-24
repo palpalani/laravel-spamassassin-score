@@ -2,7 +2,6 @@
 
 namespace palPalani\LaravelSpamassassinScore;
 
-use PalPalani\LaravelSpamassassinScore\Commands\LaravelSpamassassinScoreCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +16,9 @@ class LaravelSpamassassinScoreServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-spamassassin-score')
-            ->hasConfigFile()
+            ->hasConfigFile();
             //->hasViews()
             //->hasMigration('create_laravel_spamassassin_score_table')
-            ->hasCommand(LaravelSpamassassinScoreCommand::class);
+            //->hasCommand(LaravelSpamassassinScoreCommand::class);
     }
 }
