@@ -1,0 +1,59 @@
+{
+    "name": "palpalani/laravel-spamassassin-score",
+    "description": "check the spam score of emails before sending them.",
+    "keywords": [
+        "palpalani",
+        "laravel-spamassassin-score"
+    ],
+    "homepage": "https://github.com/palpalani/laravel-spamassassin-score",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "palPalani",
+            "email": "palani.p@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/contracts": "^8.0",
+        "spatie/laravel-package-tools": "^1.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/laravel-ray": "^1.9",
+        "vimeo/psalm": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "palPalani\\LaravelSpamassassinScore\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "palPalani\\LaravelSpamassassinScore\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "palPalani\\LaravelSpamassassinScore\\LaravelSpamassassinScoreServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSpamassassinScore": "palPalani\\LaravelSpamassassinScore\\LaravelSpamassassinScoreFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
