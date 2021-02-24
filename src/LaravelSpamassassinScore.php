@@ -1,6 +1,7 @@
 <?php
 
 namespace palPalani\LaravelSpamassassinScore;
+
 use Illuminate\Support\Facades\Http;
 
 class LaravelSpamassassinScore
@@ -9,10 +10,10 @@ class LaravelSpamassassinScore
     {
         $response = Http::post(config('spamassassin-score.api'), [
             'email' => $html,
-            'options' => config('spamassassin-score.api')
+            'options' => config('spamassassin-score.api'),
         ]);
 
-        if($response->successful()) {
+        if ($response->successful()) {
             return $response->json();
         }
 

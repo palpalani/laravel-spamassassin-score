@@ -2,9 +2,9 @@
 
 namespace palPalani\LaravelSpamassassinScore;
 
+use PalPalani\LaravelSpamassassinScore\Commands\LaravelSpamassassinScoreCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use PalPalani\LaravelSpamassassinScore\Commands\LaravelSpamassassinScoreCommand;
 
 class LaravelSpamassassinScoreServiceProvider extends PackageServiceProvider
 {
