@@ -35,7 +35,7 @@ return [
 ## Usage
 
 ```php
-$score = new palPalani\LaravelSpamassassinScore();
+$score = new \palPalani\LaravelSpamassassinScore\LaravelSpamassassinScore();
 echo $score->getScore('Hello, palPalani!');
 ```
 
