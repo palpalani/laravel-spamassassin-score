@@ -5,7 +5,7 @@ namespace palPalani\LaravelSpamassassinScore;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \PalPalani\LaravelSpamassassinScore\LaravelSpamassassinScore
+ * @see \palPalani\LaravelSpamassassinScore\LaravelSpamassassinScore
  */
 class LaravelSpamassassinScoreFacade extends Facade
 {

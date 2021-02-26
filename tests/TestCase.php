@@ -1,10 +1,10 @@
 <?php
 
-namespace PalPalani\LaravelSpamassassinScore\Tests;
+namespace palPalani\LaravelSpamassassinScore\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use PalPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider;
+use palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -12,9 +12,11 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
+        /*
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'PalPalani\\LaravelSpamassassinScore\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'palPalani\\LaravelSpamassassinScore\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
+        */
     }
 
     protected function getPackageProviders($app)
