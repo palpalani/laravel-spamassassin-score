@@ -3,11 +3,14 @@
 namespace palPalani\LaravelSpamassassinScore\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Foundation\Testing\WithFaker;
 use Orchestra\Testbench\TestCase as Orchestra;
 use palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider;
 
 class TestCase extends Orchestra
 {
+    use WithFaker;
+    
     public function setUp(): void
     {
         parent::setUp();
