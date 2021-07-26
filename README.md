@@ -1,4 +1,4 @@
-# check the spam score of emails before sending them.
+# Check the spam score of emails.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/palpalani/laravel-spamassassin-score.svg?style=flat-square)](https://packagist.org/packages/palpalani/laravel-spamassassin-score)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/palpalani/laravel-spamassassin-score/run-tests?label=tests)](https://github.com/palpalani/laravel-spamassassin-score/actions?query=workflow%3ATests+branch%3Amaster)
@@ -6,7 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/palpalani/laravel-spamassassin-score.svg?style=flat-square)](https://packagist.org/packages/palpalani/laravel-spamassassin-score)
 
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Checks the spam score of email contents using spamassassin database.
 
 ## Installation
 
