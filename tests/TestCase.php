@@ -10,7 +10,7 @@ use palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider;
 class TestCase extends Orchestra
 {
     use WithFaker;
-    
+
     public function setUp(): void
     {
         parent::setUp();
