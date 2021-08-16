@@ -3,7 +3,6 @@
 namespace palPalani\SpamassassinScore\Tests;
 
 use palPalani\SpamassassinScore\SpamassassinScore;
-use palPalani\SpamassassinScore\Tests\TestCase;
 
 class SpamassassinScoreTest extends TestCase
 {
