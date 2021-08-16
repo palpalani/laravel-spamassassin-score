@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "palPalani\\LaravelSpamassassinScore\\": "src"
+            "palPalani\\SpamassassinScore\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "palPalani\\LaravelSpamassassinScore\\Tests\\": "tests"
+            "palPalani\\SpamassassinScore\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "palPalani\\LaravelSpamassassinScore\\LaravelSpamassassinScoreServiceProvider"
+                "SpamassassinScoreServiceProvider"
             ],
             "aliases": {
-                "LaravelSpamassassinScore": "palPalani\\LaravelSpamassassinScore\\LaravelSpamassassinScoreFacade"
+                "LaravelSpamassassinScore": "SpamassassinScoreFacade"
             }
         }
     },

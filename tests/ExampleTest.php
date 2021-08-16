@@ -1,6 +1,6 @@
 <?php
 
-namespace palPalani\LaravelSpamassassinScore\Tests;
+namespace palPalani\SpamassassinScore\Tests;
 
 class ExampleTest extends TestCase
 {

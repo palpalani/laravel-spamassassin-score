@@ -18,7 +18,7 @@ composer require palpalani/laravel-spamassassin-score
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider" --tag="laravel-spamassassin-score-config"
+php artisan vendor:publish --provider="palPalani\SpamassassinScore\SpamassassinScoreServiceProvider" --tag="laravel-spamassassin-score-config"
 ```
 
 This is the contents of the published config file:
@@ -35,7 +35,7 @@ return [
 ## Usage
 
 ```php
-$score = new \palPalani\LaravelSpamassassinScore\LaravelSpamassassinScore();
+$score = new \palPalani\SpamassassinScore\SpamassassinScore();
 echo $score->getScore('Hello, palPalani!');
 ```
 

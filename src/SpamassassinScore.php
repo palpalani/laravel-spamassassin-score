@@ -1,10 +1,10 @@
 <?php
 
-namespace palPalani\LaravelSpamassassinScore;
+namespace palPalani\SpamassassinScore;
 
 use Illuminate\Support\Facades\Http;
 
-class LaravelSpamassassinScore
+class SpamassassinScore
 {
     public function getScore(string $html)
     {
