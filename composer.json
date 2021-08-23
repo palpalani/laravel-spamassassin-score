@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SpamassassinScoreServiceProvider"
+                "palPalani\\SpamassassinScore\\SpamassassinScoreServiceProvider"
             ],
             "aliases": {
-                "LaravelSpamassassinScore": "SpamassassinScoreFacade"
+                "SpamassassinScore": "palPalani\\SpamassassinScore\\SpamassassinScoreFacade"
             }
         }
     },
