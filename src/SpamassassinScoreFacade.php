@@ -11,6 +11,6 @@ class SpamassassinScoreFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'laravel-spamassassin-score';
+        return 'spamassassin-score';
     }
 }
