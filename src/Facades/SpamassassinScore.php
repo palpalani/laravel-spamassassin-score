@@ -1,16 +1,16 @@
 <?php
 
-namespace palPalani\SpamassassinScore;
+namespace palPalani\SpamassassinScore\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \palPalani\SpamassassinScore\SpamassassinScore
  */
-class SpamassassinFacade extends Facade
+class SpamassassinScore extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'spamassassin-score';
+        return 'spamassassin';
     }
 }

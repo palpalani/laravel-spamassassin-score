@@ -49,7 +49,7 @@
                 "palPalani\\SpamassassinScore\\SpamassassinScoreServiceProvider"
             ],
             "aliases": {
-                "Spamassassin": "palPalani\\SpamassassinScore\\SpamassassinFacade"
+                "SpamassassinScore": "palPalani\\SpamassassinScore\\Facades\\SpamassassinScore"
             }
         }
     },

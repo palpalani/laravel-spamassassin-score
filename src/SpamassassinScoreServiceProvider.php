@@ -15,7 +15,7 @@ class SpamassassinScoreServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-spamassassin-score')
+            ->name('spamassassin')
             ->hasConfigFile();
     }
 }
