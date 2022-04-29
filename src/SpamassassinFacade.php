@@ -11,6 +11,6 @@ class SpamassassinFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'spamassassin';
+        return 'spamassassin-score';
     }
 }
