@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \palPalani\SpamassassinScore\SpamassassinScore
  */
-class SpamassassinScoreFacade extends Facade
+class SpamassassinFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'spamassassin-score';
+        return 'spamassassin';
     }
 }
