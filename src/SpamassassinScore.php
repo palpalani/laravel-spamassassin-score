@@ -1,16 +1,16 @@
 <?php
 
-namespace palPalani\LaravelSpamassassinScore;
+namespace palPalani\SpamassassinScore;
 
 use Illuminate\Support\Facades\Http;
 
-class LaravelSpamassassinScore
+class SpamassassinScore
 {
     public function getScore(string $html)
     {
-        $response = Http::post(config('spamassassin-score.api'), [
+        $response = Http::post(config('spamassassin.api'), [
             'email' => $html,
-            'options' => config('spamassassin-score.api'),
+            'options' => config('spamassassin.api'),
         ]);
 
         if ($response->successful()) {

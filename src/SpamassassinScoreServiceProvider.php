@@ -1,11 +1,11 @@
 <?php
 
-namespace palPalani\LaravelSpamassassinScore;
+namespace palPalani\SpamassassinScore;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LaravelSpamassassinScoreServiceProvider extends PackageServiceProvider
+class SpamassassinScoreServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -15,7 +15,7 @@ class LaravelSpamassassinScoreServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-spamassassin-score')
+            ->name('spamassassin')
             ->hasConfigFile();
     }
 }

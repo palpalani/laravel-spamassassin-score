@@ -1,20 +1,23 @@
 <?php
 
-namespace palPalani\LaravelSpamassassinScore\Tests;
+namespace palPalani\SpamassassinScore\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Foundation\Testing\WithFaker;
 use Orchestra\Testbench\TestCase as Orchestra;
-use palPalani\LaravelSpamassassinScore\LaravelSpamassassinScoreServiceProvider;
+use palPalani\SpamassassinScore\SpamassassinScoreServiceProvider;
 
 class TestCase extends Orchestra
 {
+    use WithFaker;
+
     public function setUp(): void
     {
         parent::setUp();
 
         /*
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'palPalani\\LaravelSpamassassinScore\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'palPalani\\SpamassassinScore\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
         */
     }
@@ -22,7 +25,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            LaravelSpamassassinScoreServiceProvider::class,
+            SpamassassinScoreServiceProvider::class,
         ];
     }
 
