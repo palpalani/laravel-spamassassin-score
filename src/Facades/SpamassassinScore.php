@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace palPalani\SpamassassinScore\Facades;
 
 use Illuminate\Support\Facades\Facade;
