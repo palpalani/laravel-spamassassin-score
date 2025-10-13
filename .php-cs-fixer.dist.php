@@ -14,8 +14,7 @@ return (new PhpCsFixer\Config())
     ->setRules([
         '@PER-CS' => true,
         '@PER-CS:risky' => true,
-        '@PHP74Migration:risky' => true,
-        '@PHP80Migration:risky' => true,
+        '@PHP82Migration:risky' => true,
         '@PHP82Migration' => true,
         'array_syntax' => ['syntax' => 'short'],
         'ordered_imports' => ['sort_algorithm' => 'alpha'],
