@@ -42,4 +42,4 @@ jobs:
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction --with-all-dependencies
 
       - name: Execute tests
-        run: vendor/bin/pest --parallel
+        run: vendor/bin/pest --parallel --no-coverage
