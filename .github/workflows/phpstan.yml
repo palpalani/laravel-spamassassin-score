@@ -34,8 +34,10 @@ jobs:
           path: vendor
           key: composer-${{ hashFiles('composer.lock') }}
 
-      - name: Run composer install
-        run: composer install -n --prefer-dist
+      - name: Install dependencies
+        run: |
+          composer require "laravel/framework:^11.0" "orchestra/testbench:^9.0" --no-interaction --no-update
+          composer install -n --prefer-dist --no-interaction
 
       - name: Run PHPStan
-        run: ./vendor/bin/phpstan analyse --error-format=github
+        run: ./vendor/bin/phpstan analyse --error-format=github --memory-limit=1G
