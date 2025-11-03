@@ -6,12 +6,12 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use palPalani\SpamassassinScore\Facades\SpamassassinScore;
 
-beforeEach(function () {
+beforeEach(function (): void {
     Config::set('spamassassin.api', 'https://spamcheck.postmarkapp.com/filter');
     Config::set('spamassassin.option', 'long');
 });
 
-it('can use facade to get spam score', function () {
+it('can use facade to get spam score', function (): void {
     Http::fake([
         'spamcheck.postmarkapp.com/filter' => Http::response([
             'success' => true,
@@ -33,7 +33,7 @@ it('can use facade to get spam score', function () {
         ->and($result['rules'])->toBeArray();
 });
 
-it('facade returns same result as direct instantiation', function () {
+it('facade returns same result as direct instantiation', function (): void {
     Http::fake([
         'spamcheck.postmarkapp.com/filter' => Http::response([
             'success' => true,
@@ -48,4 +48,3 @@ it('facade returns same result as direct instantiation', function () {
 
     expect($facadeResult)->toEqual($directResult);
 });
-

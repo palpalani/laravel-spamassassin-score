@@ -23,8 +23,6 @@ class SpamassassinScoreServiceProvider extends PackageServiceProvider
 
     public function registeringPackage(): void
     {
-        $this->app->singleton('spamassassin', function ($app) {
-            return new SpamassassinScore();
-        });
+        $this->app->singleton('spamassassin', fn($app) => new SpamassassinScore());
     }
 }

@@ -6,12 +6,12 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use palPalani\SpamassassinScore\SpamassassinScore;
 
-beforeEach(function () {
+beforeEach(function (): void {
     Config::set('spamassassin.api', 'https://spamcheck.postmarkapp.com/filter');
     Config::set('spamassassin.option', 'long');
 });
 
-it('can get spam score from API', function () {
+it('can get spam score from API', function (): void {
     Http::fake([
         'spamcheck.postmarkapp.com/filter' => Http::response([
             'success' => true,
@@ -30,7 +30,7 @@ it('can get spam score from API', function () {
         ->and($score['score'])->toBe(2.5);
 });
 
-it('returns response even when API call fails', function () {
+it('returns response even when API call fails', function (): void {
     Http::fake([
         'spamcheck.postmarkapp.com/filter' => Http::response([
             'success' => false,
@@ -43,7 +43,7 @@ it('returns response even when API call fails', function () {
     expect($score)->toBeArray()->toHaveKey('success');
 });
 
-it('uses configured API endpoint', function () {
+it('uses configured API endpoint', function (): void {
     $customApi = 'https://custom-api.example.com/check';
     Config::set('spamassassin.api', $customApi);
 
@@ -56,12 +56,10 @@ it('uses configured API endpoint', function () {
 
     (new SpamassassinScore())->getScore('test email');
 
-    Http::assertSent(function ($request) use ($customApi) {
-        return $request->url() === $customApi;
-    });
+    Http::assertSent(fn($request) => $request->url() === $customApi);
 });
 
-it('sends email content in request body', function () {
+it('sends email content in request body', function (): void {
     $emailContent = '<html><body>Test email content</body></html>';
 
     Http::fake([
@@ -79,4 +77,3 @@ it('sends email content in request body', function () {
         return isset($data['email']) && $data['email'] === $emailContent;
     });
 });
-
