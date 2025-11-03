@@ -12,7 +12,7 @@ class SpamassassinScore
     {
         $response = Http::post(config('spamassassin.api'), [
             'email' => $html,
-            'options' => config('spamassassin.api'),
+            'options' => config('spamassassin.option', 'long'),
         ]);
 
         if ($response->successful()) {

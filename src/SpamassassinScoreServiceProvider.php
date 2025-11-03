@@ -20,4 +20,11 @@ class SpamassassinScoreServiceProvider extends PackageServiceProvider
             ->name('spamassassin')
             ->hasConfigFile();
     }
+
+    public function registeringPackage(): void
+    {
+        $this->app->singleton('spamassassin', function ($app) {
+            return new SpamassassinScore();
+        });
+    }
 }
