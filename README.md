@@ -6,7 +6,7 @@
 
 [![GitHub Tests](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/run-tests.yml)
 [![Code Style](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/php-cs-fixer.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/php-cs-fixer.yml)
-[![Psalm](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/psalm.yml?branch=main&label=psalm&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/psalm.yml)
+[![PHPStan](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/phpstan.yml)
 
 [![PHP Version Support](https://img.shields.io/badge/PHP-%3E%3D%208.3-8892BF.svg?style=flat-square)](https://php.net)
 [![Laravel Version Support](https://img.shields.io/badge/Laravel-%5E11.0%20%7C%20%5E12.0-FF2D20.svg?style=flat-square)](https://laravel.com)
@@ -161,14 +161,12 @@ This package uses several code quality tools:
 - **[Pest](https://pestphp.com/)** - Testing framework (alternative)
 - **[PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)** - Code style fixing
 - **[PHPStan](https://phpstan.org/)** - Static analysis
-- **[Larastan](https://github.com/larastan/larastan)** - Laravel-specific static analysis
-- **[Psalm](https://psalm.dev/)** - Static analysis
+- **[Larastan](https://github.com/larastan/larastan)** - Laravel-specific static analysis (PHPStan extension)
 
 Run static analysis:
 
 ```bash
 composer analyse  # PHPStan
-composer psalm    # Psalm
 ```
 
 ## Changelog

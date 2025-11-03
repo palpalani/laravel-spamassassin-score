@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated Laravel support from `^9.0|^10.0|^11.0` to `^11.0|^12.0` (dropped Laravel 9 and 10 support)
 - Updated GitHub Actions workflows
 - Updated PHP CS Fixer configuration
-- Updated Psalm configuration
+- Updated PHPStan configuration
 
 ### Fixed
 - Fixed styling issues

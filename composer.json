@@ -6,10 +6,15 @@
         "spamassassin",
         "spam-score",
         "php",
+        "laravel",
+        "package",
+        "email",
+        "spam-check",
         "laravel-spamassassin-score"
     ],
     "homepage": "https://github.com/palpalani/laravel-spamassassin-score",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "palPalani",
@@ -24,16 +29,15 @@
         "spatie/laravel-package-tools": "^1.4"
     },
     "require-dev": {
-        "nunomaduro/collision": "^8.1.1|^7.10.0",
         "larastan/larastan": "^2.9",
+        "nunomaduro/collision": "^8.1.1|^7.10.0",
         "orchestra/testbench": "^9.0.0|^8.22.0",
         "pestphp/pest": "^4.0",
         "pestphp/pest-plugin-arch": "^4.0",
         "pestphp/pest-plugin-laravel": "^4.0",
         "phpstan/extension-installer": "^1.3",
         "phpstan/phpstan-deprecation-rules": "^1.1",
-        "phpstan/phpstan-phpunit": "^1.3",
-        "vimeo/psalm": "^5.0"
+        "phpstan/phpstan-phpunit": "^1.3"
     },
     "autoload": {
         "psr-4": {
@@ -47,7 +51,6 @@
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
-        "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/phpunit --colors=always",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
@@ -68,6 +71,6 @@
             }
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
