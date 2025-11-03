@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/packagist/l/palpalani/laravel-spamassassin-score.svg?style=flat-square)](https://packagist.org/packages/palpalani/laravel-spamassassin-score)
 
 [![GitHub Tests](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/run-tests.yml)
-[![Code Style](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/php-cs-fixer.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/php-cs-fixer.yml)
+[![Code Style](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/pint.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/pint.yml)
 [![PHPStan](https://img.shields.io/github/actions/workflow/status/palpalani/laravel-spamassassin-score/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/palpalani/laravel-spamassassin-score/actions/workflows/phpstan.yml)
 
 [![PHP Version Support](https://img.shields.io/badge/PHP-%3E%3D%208.3-8892BF.svg?style=flat-square)](https://php.net)
@@ -159,7 +159,7 @@ This package uses several code quality tools:
 
 - **[PHPUnit](https://phpunit.de/)** - Testing framework
 - **[Pest](https://pestphp.com/)** - Testing framework (alternative)
-- **[PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)** - Code style fixing
+- **[Laravel Pint](https://laravel.com/docs/pint)** - Code style fixing (powered by PHP CS Fixer)
 - **[PHPStan](https://phpstan.org/)** - Static analysis
 - **[Larastan](https://github.com/larastan/larastan)** - Laravel-specific static analysis (PHPStan extension)
 
@@ -167,6 +167,12 @@ Run static analysis:
 
 ```bash
 composer analyse  # PHPStan
+```
+
+Run code formatting:
+
+```bash
+composer format  # Laravel Pint
 ```
 
 ## Changelog

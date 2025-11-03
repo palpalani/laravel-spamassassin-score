@@ -11,3 +11,4 @@ phpstan.neon
 phpstan-baseline.neon
 vendor
 .php-cs-fixer.cache
+.pint-cache

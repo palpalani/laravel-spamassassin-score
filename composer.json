@@ -30,6 +30,7 @@
     },
     "require-dev": {
         "larastan/larastan": "^2.9",
+        "laravel/pint": "^1.22",
         "nunomaduro/collision": "^8.1.1|^7.10.0",
         "orchestra/testbench": "^9.0.0|^8.22.0",
         "pestphp/pest": "^4.0",
@@ -51,6 +52,7 @@
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "format": "vendor/bin/pint",
         "test": "vendor/bin/phpunit --colors=always",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
