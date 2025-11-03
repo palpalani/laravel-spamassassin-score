@@ -50,10 +50,10 @@
         }
     },
     "scripts": {
-        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G --parallel",
         "format": "vendor/bin/pint --parallel",
-        "test": "vendor/bin/pest --colors=always",
-        "test-coverage": "vendor/bin/pest --coverage"
+        "test": "vendor/bin/pest --colors=always --parallel",
+        "test-coverage": "vendor/bin/pest --coverage --parallel"
     },
     "config": {
         "sort-packages": true,

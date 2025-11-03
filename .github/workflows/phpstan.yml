@@ -40,4 +40,4 @@ jobs:
           composer install -n --prefer-dist --no-interaction
 
       - name: Run PHPStan
-        run: ./vendor/bin/phpstan analyse --error-format=github --memory-limit=1G
+        run: ./vendor/bin/phpstan analyse --error-format=github --memory-limit=1G --parallel
