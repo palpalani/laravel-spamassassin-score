@@ -5,6 +5,7 @@
         "palpalani",
         "spamassassin",
         "spam-score",
+        "php",
         "laravel-spamassassin-score"
     ],
     "homepage": "https://github.com/palpalani/laravel-spamassassin-score",
