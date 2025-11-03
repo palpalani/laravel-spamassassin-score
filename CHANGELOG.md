@@ -9,10 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Pest testing framework support
-- Additional keywords to composer.json (spamassassin, spam-score, php)
+- Laravel Pint for code formatting (replaced PHP CS Fixer)
+- Parallel processing support for PHPStan, Pest, and Pint
+- Additional keywords to composer.json (spamassassin, spam-score, php, laravel, package, email, spam-check)
+- PHPStan for static analysis (replaced Psalm)
+
+### Changed
+- Migrated from PHP CS Fixer to Laravel Pint
+- Migrated from Psalm to PHPStan
+- Updated Larastan to version 3.0
+- Updated PHPStan-related packages to version 2.0
+- Updated PHPUnit configuration schema to latest version
+- Updated test scripts to use Pest instead of PHPUnit
+- Updated GitHub Actions workflows to use Pest and Pint
+- Enhanced composer.json with best practices
 
 ### Removed
-- PHPUnit dependency (replaced with Pest)
+- PHPUnit direct usage (replaced with Pest, though still used internally)
+- PHP CS Fixer (replaced with Laravel Pint)
+- Psalm (replaced with PHPStan)
+- pest-plugin-laravel (removed due to dependency conflicts)
 
 ## [1.0.0] - 2025-10-13
 
