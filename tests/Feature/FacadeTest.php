@@ -44,7 +44,7 @@ it('facade returns same result as direct instantiation', function (): void {
     $emailContent = '<html><body>Test</body></html>';
 
     $facadeResult = SpamassassinScore::getScore($emailContent);
-    $directResult = (new \palPalani\SpamassassinScore\SpamassassinScore())->getScore($emailContent);
+    $directResult = (new palPalani\SpamassassinScore\SpamassassinScore())->getScore($emailContent);
 
     expect($facadeResult)->toEqual($directResult);
 });
